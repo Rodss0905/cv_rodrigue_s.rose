@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Raleway:ital,wght@0,200;0,600;1,400&display=swap');
+@font-face {
+    font-family: Raleway;
+    src: url('fonts/Raleway-Italic-VariableFont_wght.ttf') format('truetype') ; 
+    src: url('fonts/Raleway-VariableFont_wght.ttf') format('truetyme');
+}
+
+
+#container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+    width: 1160px;
+    margin: 50px;
+    border-width: 1px;
+    border-right: solid;
+    border-color: black;
+    background-color: #782221;
+    color: white;
+}
+
+h2{ 
+    font-family: "Lato",sans-serif;
+    background-color: #dbc2a4;
+    padding-left: 30px;
+}
+
+h3{
+    background-color: #dbc2a4;
+}
+
+#container header{
+    text-align: center;
+}
+
+#container header img{
+    cursor: zoom-in;
+    margin-top: 20px;
+}
+
+#container .menu{
+    box-sizing: border-box ;
+    background-color: #2c1d27;
+    display: flex;
+    justify-content: space-around;
+    width: 1160px;
+    color: white;
+}
+
+#container #cv-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: " left-column right-column right-column";
+    width: 1160px; 
+}
+
+#container #cv-container #about_me{
+    grid-area: left-column;
+    width: 60%;
+    margin-left: 20px;
+}
+
+#container #cv-container #about_me p{
+    text-indent: 20px;
+}
+
+#container #cv-container #Professionnal_career{
+    grid-area: right-column;
+    background-color: white;
+    color: black;
+}
+
+#container #cv-container #Professionnal_career h3{
+    margin-left: 20px;
+}
+
+#container #cv-container #Professionnal_career p{
+    margin-left: 20px;
+}
+
+#container #social_networks{
+    text-align: center;
+}
